@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Login } from './models/login';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -13,11 +14,15 @@ export class AppComponent {
   validationMessage = '';
   login = new Login();
 
-  logIn(){
-    if(this.login.username == 'abc' && this.login.password == '123' ){
-      alert("Successfully logged in!");
+  constructor(private router: Router){
+
+  }
+
+  authenticate(){
+    if(this.login.username=='abc' && this.login.password=='123'){
+      this.router.navigate(['/home', this.login]);
     }else{
-      this.validationMessage = 'Wrong credentials, try again.';
+      this.validationMessage = 'Wrong credentials, try again.'
     }
   }
 
