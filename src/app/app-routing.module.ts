@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 
 export const routes: Routes = [
-  {path: 'home', component: HomeComponent}
+  {path: 'home/:login', component: HomeComponent}
   //{ path: '**', component: AppComponent }
   ]; 
 
