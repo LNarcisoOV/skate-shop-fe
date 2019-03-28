@@ -1,0 +1,34 @@
+<head>
+
+  </head>
+  
+  <body>
+    <div style="text-align:center">
+      <h1>
+        Whelcome to {{title}} !
+      </h1>
+      <h3>
+        Hey, do your login, bro!
+      </h3>
+    </div>
+    <div>
+      <div>
+        {{ validationMessage }}
+      </div>
+      <div>
+        <label>Login: </label>
+        <input type="text" [(ngModel)]="login.username" />
+      </div>
+      <div>
+        <label>Password: </label>
+        <input type="password" [(ngModel)]="login.password" />
+      </div>
+      <div>
+        <button (click)="authenticate()">Sign In</button>
+      </div>
+      <div>
+        <button (click)="redirectToRegisterPage()">Sign up</button>
+      </div>
+    </div>
+  </body>
+  <router-outlet></router-outlet>

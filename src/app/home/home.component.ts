@@ -9,12 +9,9 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   login = new Login();
-  test = '';
 
   constructor(private activedRouter: ActivatedRoute) {
-    this.activedRouter.params.subscribe(params => {
-      this.login = JSON.parse(params['login']);    
-    });
+    this.login = JSON.parse(this.activedRouter.snapshot.params['login']);     
   }
   
   ngOnInit() {
