@@ -1,7 +1,7 @@
 export class Product {
-    id: BigInteger;
+    id: number;
     name: String;
     size: String;
-    price: BigInteger;
+    price: number;
     registrationDate: Date;
 }
