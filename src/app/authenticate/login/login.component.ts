@@ -18,7 +18,7 @@ export class LoginComponent {
 
   authenticate() {
     if (this.login.username == 'abc' && this.login.password == '123') {
-      this.router.navigate(['home/', JSON.stringify(this.login)]);
+      this.router.navigate(['dashboard/', JSON.stringify(this.login)]);
     } else {
       this.validationMessage = 'Wrong credentials, try again.'
     }

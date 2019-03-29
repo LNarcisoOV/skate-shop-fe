@@ -6,21 +6,21 @@ import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AuthenticateModule } from './authenticate/authenticate.module';
 import { ProductModule } from './product/product.module';
-import { HomeComponent } from './home/home.component';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 
 @NgModule({ 
   declarations: [
     AppComponent,
-    PageNotFoundComponent,
-    HomeComponent    
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     AuthenticateModule,
-    ProductModule
+    ProductModule,
+    DashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
