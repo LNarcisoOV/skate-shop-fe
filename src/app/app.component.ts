@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 
 export class AppComponent {
-  title = 'SkateStoreApp';
+  title = 'skateShopApp';
   validationMessage = '';
   login = new Login();
  
