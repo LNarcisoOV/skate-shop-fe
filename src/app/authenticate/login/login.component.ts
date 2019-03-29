@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Login } from '../models/login';
 import { Router } from '@angular/router';
+import { Login } from 'src/app/models/login';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +11,7 @@ export class LoginComponent {
 
   title = 'SkateStoreApp';
   validationMessage = '';
-  login = new Login();
+  login = new Login;
 
   constructor(private router: Router) { }
 

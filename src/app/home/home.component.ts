@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Login } from '../models/login';
 import { ActivatedRoute } from '@angular/router';
+import { ProductListComponent } from '../product/product-list/product-list.component';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   login = new Login();
-
+  
   constructor(private activedRouter: ActivatedRoute) {
     this.login = JSON.parse(this.activedRouter.snapshot.params['login']);     
   }

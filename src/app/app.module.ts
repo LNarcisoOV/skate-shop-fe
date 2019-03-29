@@ -5,17 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AuthenticateModule } from './authenticate/authenticate.module';
+import { ProductModule } from './product/product.module';
+import { HomeComponent } from './home/home.component';
 
-@NgModule({
+
+@NgModule({ 
   declarations: [
     AppComponent,
-    PageNotFoundComponent    
+    PageNotFoundComponent,
+    HomeComponent    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    AuthenticateModule
+    AuthenticateModule,
+    ProductModule
   ],
   providers: [],
   bootstrap: [AppComponent]
